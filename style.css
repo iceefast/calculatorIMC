@@ -85,6 +85,7 @@ form input::placeholder {
 }
 
 form button {
+  margin-bottom: 3rem;
   display: inline-flex;
   height: 5.2rem;
   padding: 1.6rem;
