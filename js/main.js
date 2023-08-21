@@ -1,5 +1,6 @@
 import { Modal } from "./modal.js";
 import { AlertError } from "./alert-error.js";
+import { notNumber, imc } from "./utils.js";
 
 const form = document.querySelector("form");
 const inputWeight = document.querySelector("#inputWeight");
@@ -26,15 +27,7 @@ form.onsubmit = (event) => {
   Modal.open();
 };
 
-function notNumber(value) {
-  return;
-}
-
 Modal.buttonClose.onclick = () => Modal.close();
-
-function imc(weight, height) {
-  return (weight / (height / 100) ** 2).toFixed(2);
-}
 
 window.addEventListener("keydown", handleEscClick);
 
